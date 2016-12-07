@@ -1,4 +1,4 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="SA Voting Lights">
   <ion-content class="padding">
     <ion-refresher
       pulling-text="Pull to refresh..."
@@ -11,42 +11,27 @@
     stroke: #444;
     fill: #444;
   }
+
+
   </style>
     <div data-ng-init=""> <!--login.show()-->
       <img src="img/redhatlogo.png" class="myLogo">
-      <h2 class="myBrand">BPM Connector - Customer</h2>
+      <h2 class="myBrand">Poll Registration</h2>
     </div>
     <div class="informationDash" data-ng-init="getProcess()">
-      <h4>My information stream</h4>
+      <h4>Name/Your ID (optional)</h4>
       <div class="list">
 
-        <div id="messages" class="list">
-          <span id="nomessages" class="item">
-            No status updates have been received yet.
-          </span>
-        </div>
-        
-        <h4>My settings</h4>
-        <a id="waiting" class="item" href="#">
-          <ion-spinner class="spinner-assertive"></ion-spinner>
-          <p style="display: inline;">Registering for push notifications</p>
-        </a>
-        <a id="pushenabled" class="item" href="#" style="display: none">
-          <h2><i class="icon ion-checkmark"></i>&nbsp;Successfully registered</h2>
-          <p>You will receive push notifications from MyInsurance from now on.</p>
-        </a>
-        <a id="pushregistererror" class="item" href="#" style="display: none">
-          <h2><i class="icon ion-alert-circled"></i>&nbsp;Error while enabling push</h2>
-          <p id="pushregistererror-msg">ERROR</p>
-        </a>
-
-        <span class="item" ng-show="processName">
-          <p>Currently interacting with the following Process:</p>
-          <p><b>{{processName}}</b></p>
-        </span>
-        <span class="item noticeMessage" ng-show="noticeMessage">
-          <p class="noticeMessage"><b>{{noticeMessage}}</b></p>
-        </span>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-social-tux placeholder-icon"></i>
+          <input type="text" placeholder="Your name/identifier (optional)">
+        </label>
+        <button class="button button-full button-positive">
+          Register this device
+        </button>
+      </div>
+    </div>
       </div>
     </div>
   </ion-content>

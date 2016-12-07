@@ -1,5 +1,6 @@
-<ion-view view-title="My Requests">
-  <ion-content data-ng-init="loadProcessInstances()">
+<ion-view view-title="Polls">
+
+  <!--<ion-content data-ng-init="loadProcessInstances()">
     <ion-refresher
       pulling-text="Pull to refresh..."
       on-refresh="loadProcessInstances()">
@@ -26,5 +27,18 @@
                   <i class="icon ion-chevron-right icon-accessory"></i>
                 </ion-item>
               </ion-list>
+  </ion-content>-->
+  <ion-content class="padding">
+    <div class="list" ng-show="noticeMessage">
+      <span class="item noticeMessage" >
+        <p class="noticeMessage"><b>{{noticeMessage}}</b></p>
+      </span>
+    </div>
+    <div class="list">
+      <a class="button button-icon icon ion-record "></a>
+      <a class="button button-icon icon ion-settings"></a>
+      <a class="button button-icon icon ion-settings"></a>
+      <a class="item light-red" href="#"></a>
+    </div>
   </ion-content>
 </ion-view>

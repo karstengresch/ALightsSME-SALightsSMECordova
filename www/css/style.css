@@ -1,4 +1,9 @@
 /** For the task list header columns and tasks **/
+body, html {
+        height:100%;
+        width:100%;
+}
+
 .flex-container {
     padding: 0;
     margin: 0;
@@ -228,4 +233,48 @@
 
 .loginFooter{
   font-size: small !IMPORTANT;
+}
+
+/* SA Lights */
+.light-red
+{
+    position: absolute;
+    
+    width: 100%;
+    height: width;
+    background: rgb(239, 14, 14); /* fallback */
+    background: rgba(239, 14, 14, 0.949);
+    border: none;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.light-yellow
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 240px;
+    height: 240px;
+   background: rgb(255, 188, 0); /* fallback */
+    background: rgba(255, 188, 0, 0.953);
+    border: none;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.light-green
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    background: rgb(91, 189, 24);
+    border: none;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
 }
